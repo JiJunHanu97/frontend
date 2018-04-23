@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#wrapper {
+	width: 50%;
+	margin: auto;
+}
+#content {
+	height: 40px;
+	line-height: 40px;
+}
+form {
+	background: #ffb380;
+}
+.element {
+	/*height: 50px;*/
+	margin-top: 2px;
+	margin-bottom: 2px;
+	border: 1px solid black;
+}
+.element span {
+	padding: 11px 25px;
+	border-left: 1px solid #ccc;	
+}
+.element input {
+	
+	margin: 20px;
+	border: 1px solid black;
+}
+#content button{
+	margin: 0 10px;
+	padding: 10px;
+}
+
+#checkall{
+	margin-left: 40px;
+}

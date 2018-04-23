@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 2</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<div class="slide">
+		<img src="images/5.jpg" alt="" class="anh active" id="img1">
+		<img src="images/2.jpg" alt="" class="anh" id="img2">
+		<img src="images/3.jpg" alt="" class="anh" id="img3">
+		<img src="images/4.jpg" alt="" class="anh" id="img4">
+		<img src="images/1.jpg" alt="" class="anh" id="img5">
+		<div class="left" onclick="slide(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+		<div class="right" onclick="slide(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+		<div class="dot">
+			<ul>
+				<li id="dot1" onclick="choose(this)" class="point dot_active"></li>
+				<li id="dot2" onclick="choose(this)" class="point"></li>
+				<li id="dot3" onclick="choose(this)" class="point"></li>
+				<li id="dot4" onclick="choose(this)" class="point"> </li>
+				<li id="dot5" onclick="choose(this)" class="point"></li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

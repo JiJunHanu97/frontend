@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+	nav{
+		background-color: #ffcc99;
+		height: 50px;
+	}
+	li{
+		list-style: none;
+
+	}
+	ul{
+		padding-left: 0;
+	}
+	.menu>li{
+		float: left;
+		height: 50px;
+		line-height: 50px;
+		position: relative;
+	}
+	.menu>li>a {
+		text-decoration: none;
+		padding-left: 10px;
+		padding-right: 10px;
+		color: #fff;
+		font-size: 20px;
+	}
+	.menu>li:hover {
+		background-color: #4dff4d;
+	}
+	.sub>li>a {
+		text-decoration: none;
+		padding-left: 10px; 
+		color: #fff
+	}
+	.sub{
+		display: none;
+		width: 200px;
+		position: absolute;
+		background: #ffcc99;	
+	}
+	.menu>li:hover .sub{
+		display: block;
+	} 
+	.sub>li:hover  {
+		background-color: #4dff4d;
+	}
+	.has-sub {
+		display: none;
+		background-color: #ffcc99;
+		width: 120px;
+	}
+	.sub>li:hover .has-sub{
+		display: block;
+	}
+	.sub>li {
+		position: relative;
+	}
+	.has-sub {
+		position: absolute;
+		left: 201px;
+		top: 0;
+	}
+	.has-sub>li>a {
+		text-decoration: none;
+		padding-left: 10px; 
+		color: #fff
+	}
+	.has-sub>li:hover {
+		background-color: #4dff4d;
+	}
+
+</style>
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Course</a>
+				<ul class="sub">
+					<li><a href="#">PHP</a>
+						<ul class="has-sub">
+							<li><a href="#">Basic</a></li>
+							<li><a href="#">Advanced</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Java</a></li>
+						<li><a href="#">Front End</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</body>
+	</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS04</title>
+	<style type="text/css">
+	div {
+		position: fixed;
+		bottom:50px;
+		right: 50px;
+		width: 100px;
+		height: 100px;
+		background-color: pink;
+		border-radius: 50%;
+	}
+</style>
+</head>
+<body style="height: 1500px">
+	<div>
+		
+	</div>
+
+	
+</body>
+</html> -->

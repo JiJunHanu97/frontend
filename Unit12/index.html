@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+	<style type="text/css">
+	a{
+		text-decoration: none;
+	}
+
+	ul{
+		list-style-type: none;
+	}
+	nav ul{
+		width: 90%;
+		margin: auto;
+	}
+
+	.menu a{
+		color: #fff !important;
+		text-transform: uppercase;
+	}
+	nav ul li{
+		float: left;
+	}
+
+	nav li i{
+		padding-left: 5px;
+	}
+
+	.menu{
+		height: 41px;
+		background-color: #01a9a1;
+		border: none;
+		border-radius: 0px;
+		margin: 0;
+	}
+	nav #lang{
+		float: right;
+	}
+
+	#lang i{
+		padding-right: 5px;
+		color: #00d3c9;
+	}
+
+	#lang a{
+		color: #00d3c9;
+	}
+
+	.menu ul>li>a{
+		float: left;
+		padding: 15px auto !important;
+	}
+
+
+</style>
+</head>
+<body>
+	<nav class="navbar fixed-top navbar-inverse menu">
+			<ul class="nav navbar-nav ">
+				<li><a class="navbar-brand" id="bar" href="#" onclick="openSlideMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+				<li><a class="navbar-brand"  href="">Trang chủ</a></li>
+				<li onclick="selection()" ><a href="" id="gioithieu">Giới thiệu</a></li>
+				<li onclick="selection()" ><a href="" id="gallery">Gallery<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+				<li class="author" onclick="selection()" id="tg_tp"><a href="">Tác giả - Tác phẩm<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+				<li onclick="selection()" ><a href="" id="tt">Tin tức</a></li>
+				<li onclick="selection()" ><a href="" id="dd">Diễn đàn</a></li>
+				<li onclick="selection()" ><a href="" id="ll">Liên hệ</a></li>
+				<li id="lang"><a href=""><i class="fa fa-caret-down" aria-hidden="true"></i>Tiếng Việt</a></li>
+			</ul>
+		</div>
+	</nav>
+<!-- 	<nav class="navbar fixed-top navbar-inverse bg-primary">
+										<a class="navbar-brand" href="#">Fixed top</a>
+									</nav> -->
+								</body>
+
+								</html>

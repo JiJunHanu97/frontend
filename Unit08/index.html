@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="" name="" id="text" onkeyup="checkValidate()">
+	<button onclick="add()" id="add" disabled="" >Add</button>
+	<button onclick="toggleCheck(true)" id="check-all" >Check all</button>
+	<button onclick="toggleCheck(false)" id="uncheck-all" >Uncheck all</button>
+	<button onclick="deleteAll()" id="delete" >Delete</button>
+	<table>
+		<tbody id="content">
+			
+		</tbody>
+	</table>
+	<script type="text/javascript">
+		var i = 1;
+		function checkValidate(){
+			var text = document.getElementById('text');
+			if (text.value !=='') {
+				document.getElementById('add').disabled = false;
+			} else {
+				document.getElementById('add').disabled = true;
+			}
+		}
+		function add() {
+			var input = document.getElementById('text');
+			// if (input.value == "") {
+			// 	alert('please,type something');
+			// 	return;
+			// } 
+			var content = '<tr id="'+i+'"><td><input type="checkbox" value="'
+			+i+'" class="check" name=""></td><td>'+input.value+'</td><td><button>Show</button><button>Edit</button><button onclick="del('+i+')">Delete</button></td></tr>';
+
+			var ct = document.getElementById("content");
+			ct.innerHTML = content + ct.innerHTML ;
+			input.value = "";
+			document.getElementById('add').disabled = true;
+			i++;
+		}
+		function del(id){
+			document.getElementById(id).remove();
+		}
+		function toggleCheck(a){
+			var check = document.getElementsByClassName('check');
+			for (var j = 0; j < check.length; j++) {
+				check[j].checked = a;
+			}
+		}
+		function deleteAll(){
+			var check = document.getElementsByClassName('check');
+			for (var k = 0; k < check.length; k++) {
+				if(check[k].checked == true){
+					document.getElementById(check[k].value).remove();
+				}
+			}
+		}
+	</script>
+</body>
+</html>

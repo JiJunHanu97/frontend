@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>Chương trình dùng do...while tính S =1+2+3+..+n </p>
+	<script type="text/javascript">
+		var n = prompt("Nhập số nguyên n(n>1)",'');
+		var i=1;
+		var sum = 0;
+		if(n>1){
+			do{
+				sum= sum+i;
+				i++;
+			}while(i<=n);
+			document.write("Tổng s = 1+..+"+n+"="+sum);
+		}else{
+			alert("Bạn nhập số nguyên chưa thỏa mãn điều kiện");
+		}
+	</script>
+</body>
+</html>

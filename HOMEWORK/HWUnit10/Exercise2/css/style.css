@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+.image{
+	width: 1000px;
+	height: 500px;
+	margin:auto;
+	/*background-color: rgba(0,0,0,.5);*/
+	position: relative;
+}
+
+.image>div>img{
+	width: 30%;
+}
+
+.image button{
+	margin-left: 12%;
+}
+
+img:hover{
+	opacity: 0.8;
+}
+.zoom{
+	width: 1000px;
+	height: 500px;
+	background-color: rgba(0,0,0,.6);
+	position: absolute;
+	top: 0;
+	text-align: center;
+	transition: 0.4s;
+	display: none;
+}
+
+.zoom img{
+	width: 60% !important;
+	margin:25px 20% 0 20%;
+}
+
+.zoom p{
+	height: 40px;
+	width: 60%;
+	margin:0 auto;
+	background-color: rgba(255,255,255,.7);
+	line-height: 40px;
+}
+
+.btn-close{
+	width: 35px;
+    height: 35px;
+    font-size: 35px;
+    position: absolute;
+    top: 27px;
+    right: 201px;
+    display: none;
+}

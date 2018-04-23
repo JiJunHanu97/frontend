@@ -1,0 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#content {
+	width: 60%;
+	margin: 0 auto;
+}
+#box-btn {
+	width: 50%;
+	border: 1px solid black;
+}
+.text {
+	font-size: 100%;
+}

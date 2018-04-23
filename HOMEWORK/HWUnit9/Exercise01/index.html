@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 1</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="form">
+		<div class="label">
+			<p>Họ và tên :</p>
+			<p>Giới tính</p>
+			<p>Email :</p>
+			<p>Số điện thoại :</p>
+			<p>Mật khẩu :</p>
+			<p>Xác nhận mật khẩu :</p>
+		</div>
+		<div class="input">
+				<p>
+					<input type="text" name="name" placeholder="Enter Name..." id="name">
+				</p>
+				<p>
+					<input type="radio" name="gender">Nam
+					<input type="radio" name="gender">Nữ	
+				</p>
+				<p>
+					<input type="email" name="Email" placeholder="Enter email..." id="email">
+				</p>
+				<p>
+					<input type="tel" name="phone" placeholder="Enter Phone Number..." id="phone">
+				</p>
+				<p>
+					<input type="password" name="name" id="pass">
+				</p>
+				<p>
+					<input type="password" name="name" id="confirm_pass">
+				</p>
+		</div>		
+	</div>
+	<div class="button">
+			<button onclick="send()">Đăng ký</button>
+			<button onclick="clearAll()">Xóa tất cả</button>
+	</div>	
+</body>
+</html>

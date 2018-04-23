@@ -1,0 +1,146 @@
+@media screen and (max-width: 1024px) {
+	body{
+		width: 100%;
+	}
+	
+}
+@media (min-width: 700px) and (max-width: 900px) {
+	.header> ul li {
+		display:none;
+	}
+	#wr_inner{
+		width: 100%
+	}
+	.div_2{
+		width: 45%;
+		margin:  0 2% 35px 2%;
+	}
+
+	nav ul li{
+		display: none;
+	}
+	nav ul li:first-child {
+			display: block;
+		}
+
+	#menu> ul li{
+		display: none;
+	}
+	.section_1{
+		font-size: 10vw;
+	}
+
+	.section_1 h4{
+		text-shadow :2px 2px /*#1f7a6e*/
+	}
+	
+
+
+	aside{
+		width: 100%;
+	}
+
+	aside> .div_1 li{
+		width: 15%;
+		margin: 0 3%;
+	}
+	.section_2> .div_3{
+		width: 15%;
+		margin: 0 3%;
+	}
+	.div_3 h3{
+		text-shadow :2px 2px
+	}
+	
+}
+@media (min-width: 480px) and (max-width: 700px) {
+	.header> .img{
+		width: 100%;
+	}
+
+	.div_2{
+		width: 100%;
+
+	}
+
+	.div_2 img{
+		width: 100%;
+	}
+
+	header ul{
+		display: none;
+	}
+
+	.section_1{
+		font-size: 10vw;
+	}
+	
+
+	.section_1 h4{
+		text-shadow :1px 1px /*1f7a6e*/
+	}
+
+
+	.section_2> .div_3{
+		width: 100%;
+	}
+
+
+	aside{
+		width: 100%;
+	}
+
+	aside> .div_1 li{
+		width: 15%;
+		margin: 0 3%;
+	}
+
+
+	.contact img{
+		width: 98%;
+	}
+}
+@media (max-width: 480px) {
+	.header> .img{
+		width: 100%;
+	}
+	.div_2{
+		width: 100%;
+
+	}
+
+	.div_2 img{
+		width: 100%;
+	}
+
+	header ul{
+		display: none;
+	}
+
+	.section_1{
+		font-size: 10vw;
+	}
+	
+
+	.section_1 h4{
+		text-shadow :1px 1px #1f7a6e
+	}
+
+
+	.section_2> .div_3{
+		width: 100%;
+		padding: 0;
+	}
+	aside{
+		width: 100%;
+	}
+	aside> .div_1 li{
+		width: 15%;
+		margin: 0 3%;
+	}
+
+
+	.contact img{
+		width: 98%;
+	}
+}

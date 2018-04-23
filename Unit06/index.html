@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			width: 200px;
+			height: 200px;
+			position: relative;
+			border-radius: 100px;
+			background: pink;
+			animation-name: duongduong;
+			animation-duration: 6s;
+			animation-iteration-count: infinite;
+		}
+		
+		@keyframes duongduong {
+			0%{
+				top:0px;
+				left: 0px;
+			}
+			14%{
+				top: 0px;
+				left: 600px;
+			}
+			28%{
+				top: 600px;
+				left: 0px;
+			}
+			42%{
+				top:0px;
+				left: 0px;
+			}
+			56%{
+				top: 0px;
+				left: 600px;
+			}
+			69%{
+				top: 600px;
+				left: 600px;
+			}
+			83%{
+				top: 600px;
+				left: 0px;
+			}
+			97%{
+				top: 0px;
+				left:0px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<marquee loop="infinite" direction="up" width="500px" height="300px" >
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, dolorum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, dolorum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, dolorum.</p>
+	</marquee>
+</body>
+</html>

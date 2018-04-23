@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input id="input" type="text" name="input">
+	<button onclick="clickme()">Add</button>
+
+	<div id="content">
+		
+	</div>
+	
+	<script type="text/javascript">
+		var i=0;
+		function clickme(){
+			var a = document.getElementById('input');
+			var b = document.getElementById('content');
+			// b.innerHTML += '<p>' + a.value  +'</p>';
+			// b.innerHTML = '<p>' + a.value + '<button onclick="del()"> Xoa </button>' + '</p>' + b.innerHTML;
+			b.innerHTML = '<p id="p'+ i +'">' + a.value + '<button onclick="del(' + i +')"> Xoa </button>' + '</p>' + b.innerHTML;
+
+			a.value='';
+			i++;
+		}
+
+		function del(i) {
+			document.getElementById('p'+i).remove();
+		}
+
+	</script>
+
+	<!-- <p class="text">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, molestiae!
+	</p>
+	<p class="text">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, molestiae!
+	</p>
+	<button onclick="clickme()">Click me</button>
+	<script type="text/javascript">
+		function clickme(){
+			// document.getElementById('text').style.color="blue";
+			var a = document.getElementsByClassName('text');
+
+			for (var i = 0; i < a.length; i++) {
+				a[i].style.color="green";
+			}
+		}
+	</script> -->
+
+
+	<!-- <script type="text/javascript">
+		function clickme(){
+			var a = prompt('Input a:');
+			var b = prompt('Input b:');
+			alert(parseInt(a)+(parseInt(b)));
+		}
+	</script> -->
+
+	<!-- <script type="text/javascript">
+		function clickme(){
+			if (confirm('Do you want go to Google')) {
+				window.open('https://www.google.com.vn','_blank');
+				// window.location.href="https://www.google.com.vn/";
+			}
+		}
+	</script> -->
+</body>
+</html>

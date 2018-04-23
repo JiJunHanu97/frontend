@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+	<style type="text/css">
+		div{
+			width:250px;
+			height: 250px;
+			position: relative;
+			background-color: pink;
+			left: 0;
+
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<button>Click</button>
+    <script type="text/javascript">
+    	$(function(){
+    		$('button').click(function(){
+    			$('div').animate({
+    				left: '200',
+    				opacity: 0.5
+    			}, 1000,function(){
+    				alert('Duong xinh gai')
+    			}).slideToggle(2000).slideToggle(2000)
+    		})
+    	})
+
+    	// $(function(){
+    	// 	$('#show').click(function(){
+    	// 		$('p').show(2000, function(){
+    	// 			// alert('show');
+    	// 			// window.location.href="https://google.com";
+    	// 			$('div').slideToggle();
+    	// 		});
+    	// 	})
+    	// 	$('#hide').click(function(){
+    	// 		$('p').hide(2000,function(){
+    	// 			alert('hide')
+    	// 		});
+    	// 	})
+    	// })
+    	// $(function(){
+    	// 	$('#click').click(function(){
+    	// 		$('div').show();
+    	// 	})
+    	// })
+    	// $(function(){
+    	// 	$('.text, #id').css({'color':'red', 'fontSize':'30px'})
+    	// })
+    </script>
+	
+</body>
+</html>

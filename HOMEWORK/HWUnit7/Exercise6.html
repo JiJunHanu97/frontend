@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>Tính tổng S = 1/1!+2/2!+...+n/n! với n nguyên dương</p>
+	<script type="text/javascript">
+		var n = prompt("Nhập số nguyên dương n:",'');
+		var gt=1;
+		var sum =0;
+		for(var i = 1;i<=n;i++){
+			var gt = gt*i;
+			sum +=i/gt;
+		}
+		document.write("Tổng S = 1/1!+2/2!+...+n/n! ="+sum+" (n = "+n+")");
+	</script>	
+</body>
+</html>

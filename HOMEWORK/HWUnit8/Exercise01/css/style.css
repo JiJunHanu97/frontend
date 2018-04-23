@@ -1,0 +1,36 @@
+		ul{
+			list-style-type: none;
+		}
+
+		.main{
+			width: 50%;
+			margin: auto;
+		}
+
+		.main li{
+				height: 40px;
+				border: 1px solid #ccc;
+				background: #81add2;
+				line-height: 40px;
+		}
+		
+		.main span{
+			padding: 11px 25px;
+			border-left: 1px solid #ccc;	}
+
+		.main i{
+			padding: 11px 25px;
+		}
+		.main button{
+			margin: 0 10px;
+			padding: 10px;
+		}
+
+		.main #checkall{
+			margin-left: 40px;
+		}
+
+
+		.main li:hover{
+			background: green;
+		}
